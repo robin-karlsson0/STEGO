@@ -1,7 +1,33 @@
 # STEGO: Unsupervised Semantic Segmentation by Distilling Feature Correspondences
 ### [Project Page](https://mhamilton.net/stego.html) | [Paper](https://arxiv.org/abs/2203.08414) | [Video](https://aka.ms/stego-video) | [ICLR 2022](https://iclr.cc/virtual/2022/poster/6068) 
 
-	
+## Installation
+
+```
+# Pytorch
+pip3 install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu113
+
+# Apex
+git clone https://github.com/NVIDIA/apex
+cd apex
+pip install -v --no-cache-dir --global-option="--cpp_ext" --global-option="--cuda_ext" ./
+cd ..
+
+# Requirements
+pip install -r requirements.txt
+
+# To avoid installation error
+pip install git+https://github.com/lucasb-eyer/pydensecrf.git
+
+```
+
+## Data preparation
+
+```
+Create cropped dataset
+Ref: https://github.com/mhamilton723/STEGO/issues/6
+```
+
 [Mark Hamilton](https://mhamilton.net/),
 [Zhoutong Zhang](https://ztzhang.info/),
 [Bharath Hariharan](http://home.bharathh.info/),
