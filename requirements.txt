@@ -20,3 +20,4 @@ torchmetrics
 protobuf==3.20
 omegaconf
 pytorch-lightning
+azureml-core
